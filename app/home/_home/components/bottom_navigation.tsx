@@ -60,7 +60,7 @@ export const BottomNavigation = () => {
                         <SocialMediaIcon src={FB}/>
                     </section>
                 </section>
-            </section>
+                </section>
             </section>
         </section>
     );
@@ -134,7 +134,7 @@ const BottomNavigationContact = ({
         >
         <section className={"flex items-center gap-2 h-10"}>
             {icon}
-            <Label className={"font-normal text-sm h-full text-primary-foreground italic"}>{label}</Label>
+            <Label className={"font-normal text-sm h-full text-primary-foreground"}>{label}</Label>
         </section>
         </a>
     )

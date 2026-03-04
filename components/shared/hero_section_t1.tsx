@@ -20,7 +20,7 @@ export const HeroSectionT1 = () => {
                         <Label className={"scroll-m-20 text-base font-bold italic text-neutral-800 tracking-tight"}>Where Nature, Culture, and Joy Come Together</Label>
                     </section>
                     <section id={"small-description"} className={""}>
-                        <Label className={"font-semibold text-sm italic text-neutral-700"}>
+                        <Label className={"font-normal text-sm text-neutral-700"}>
                             Tucked away in the heart of Chanika, Dar es Salaam, our garden is more than a place — it’s an experience.
                             From vibrant flower paths to traditional foods and children’s play zones, to entertainment halls, various
                             sports to optional accommodation facilities and more!  Chanika City Botanical Garden is designed to be a relaxing,

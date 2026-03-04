@@ -35,7 +35,7 @@ export default function GalleryPage() {
         <section className={"py-5 flex flex-col gap-20 mt-10"}>
             <section className={"flex flex-col gap-4"}>
                 <Label className={"text-primary font-bold text-3xl"}>Discover Our Garden Through the Lens</Label>
-                <Label className={"font-medium text-base italic text-neutral-800 w-full md:w-1/2"}>Step into a world of vibrant colors and natural beauty as we invite you to explore
+                <Label className={" text-base font-normal text-neutral-800 w-full md:w-1/2"}>Step into a world of vibrant colors and natural beauty as we invite you to explore
                     Chanika Kijani through captivating photographs. Each image tells a story of growth,
                     serenity, and the timeless charm of our botanical garden. Let your eyes wander through
                     blooming flowers, lush greenery, and peaceful pathways — all captured through the

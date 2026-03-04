@@ -55,6 +55,22 @@ export const MobileNavigationDrawer = ({
                             isActive={pathname === "/events"}
                         />
                     </section>
+                     <section className={"h-[40px] w-full"}>
+                        <TopNavigationLink
+                            onClick={() => onOpenChange(false)}
+                            href={"/admission"}
+                            label={"A D M I S S I O N"}
+                            isActive={pathname === "/admission"}
+                        />
+                    </section>
+                     <section className={"h-[40px] w-full"}>
+                        <TopNavigationLink
+                            onClick={() => onOpenChange(false)}
+                            href={"/booking"}
+                            label={"B O O K I N G"}
+                            isActive={pathname === "/booking"}
+                        />
+                    </section>
                 </section>
               <Button onClick={() => onOpenChange(false)} className={"absolute top-2 right-4"}>
                   <X/>

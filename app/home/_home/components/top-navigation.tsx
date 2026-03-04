@@ -10,7 +10,6 @@ import {usePathname} from "next/navigation";
 
 export const TopNavigation = () => {
     const pathname = usePathname();
-    console.log(pathname)
     return(
         <section id={"top-navbar"} className={"flex items-center justify-between h-fit pt-4 pb-2"}>
             <section id={"logo"}>
@@ -28,6 +27,10 @@ export const TopNavigation = () => {
                 <TopNavigationLink href={"/services"} label={"Services"} isActive={pathname === "/services"}/>
                 <TopNavigationLink href={"/events"} label={"Events"} isActive={pathname === "/events"}/>
                 <TopNavigationLink href={"/gallery"} label={"Gallery"} isActive={pathname === "/gallery"}/>
+                <TopNavigationLink href={"/admission"} label={"Admission"} isActive={pathname === "/admission"}/>
+                <TopNavigationLink href={"/booking"} label={"Booking"} isActive={pathname === "/booking"}/>
+
+
             </section>
             <section id={"actions"} className={"hidden md:flex"}>
                 <a
@@ -50,7 +53,6 @@ export const TopNavigation = () => {
                     </Button>
                 </MobileNavigationDrawer>
             </section>
-
         </section>
     )
 
