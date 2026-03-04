@@ -1,6 +1,7 @@
 import { Label } from "@/components/ui/label";
 import { AttractionSection } from "@/components/shared/attraction_section";
 
+
 export default function ServicesPage() {
   return (
     <section className="flex flex-col gap-12 mt-8">
@@ -9,8 +10,9 @@ export default function ServicesPage() {
       <section className="flex flex-col gap-6 px-5 md:px-12 max-w-6xl">
         
         <Label className="font-bold text-primary text-3xl md:text-5xl leading-tight">
-          Our Services – Where Nature Meets Hospitality
+          Our Services – Where Nature Meets Hospitality.
         </Label>
+
 
         <Label className="font-normal text-base md:text-lg leading-relaxed text-muted-foreground max-w-5xl">
           At Chanika Kijani, we offer a diverse range of services designed to bring people
