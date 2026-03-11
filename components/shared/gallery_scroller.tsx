@@ -6,17 +6,16 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import {Card, CardContent} from "@/components/ui/card";
-import {Label} from "@/components/ui/label";
+import { Card, CardContent } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import PIC1 from "@/public/assets/ATT5.png"
 import PIC2 from "@/public/assets/ATTR6.png"
 import PIC3 from "@/public/assets/ATTR2.png"
 import PIC4 from "@/public/assets/ATTR7.png"
-import {Button} from "@/components/ui/button";
-import {StaticImport} from "next/dist/shared/lib/get-img-props";
-import {useRouter} from "next/navigation";
-import {ArrowRight} from "lucide-react";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 
 
@@ -25,17 +24,16 @@ export const GalleryScroller = () => {
     return (
         <section className="flex justify-center h-fit py-10 px-4 sm:px-8 md:px-14 mb-10 md:mb-4">
             <section className="flex flex-col items-center gap-4 w-full">
-                <section className={"w-full flex flex-col md:flex-row gap-5 md:gap-10  items-center justify-between"}>
+                <section className={"w-full flex  items-center justify-between px-2"}>
                     <section className={"flex-1"}>
                         <Label className="scroll-m-20 text-primary  text-2xl md:text-3xl font-extrabold tracking-tight text-center">
                             Top Sites To Visit
                         </Label>
                     </section>
-                    <section className={"flex flex-1 justify-center md:justify-end w-full"}>
-                        <Button onClick={() => router.push("/gallery")} variant={"outline"} className={"border cursor-pointer border-neutral-400 w-[calc(100%-50px)] md:w-[300px] rounded-md md:rounded-full"}>
+                    <section className={"flex flex-1 justify-end w-full"}>
+                        <Link href={"/gallery"} className={""}>
                             View All Sites
-                            <ArrowRight size={16}/>
-                        </Button>
+                        </Link>
                     </section>
                 </section>
                 <section className="w-full max-w-7xl flex justify-center">
@@ -58,7 +56,7 @@ export const GalleryScroller = () => {
 };
 
 
-interface GalleryItemProps{
+interface GalleryItemProps {
     src: string | StaticImport
 }
 
